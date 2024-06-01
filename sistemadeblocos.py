@@ -10,32 +10,31 @@ print("     4     ")
 print("  2     6  ")
 print("1   3  5  7")
 print("1 = Esquerda, 2 = Direita, 0 = Ler bloco atual")
-res = int(input("Comando: "))
-if res == 0:
-    print("Dados bloco 4:")
+print("So é permitido 2 digitos, se você querer acessar o 6 digite 20,\n se você quiser acessar o 1 digite 11, não tem necessidade do 0 quando o numero for na ultima linha")
+res = int(input("Endereço: "))
+u = res // 1 % 10
+d = res // 10 % 10
+if(d == 0):
+    print("Bloco 4")
     print(b4)
-if res == 1:
-    print("Agora você esta no bloco 2")
-    res = int(input("Comando: "))
-    if res == 0:
-        print("Dados Bloco 2:")
-        print(b2)
-    if res == 1:
-        print("Dados Bloco 1:")
-        print(b1)
-    if res == 2:
-        print("Dados Bloco 3:")
-        print(b3)
-    exit()
-if res == 2:
-    print("Agora você esta no bloco 6")
-    res = int(input("Comando: "))
-    if res == 0:
-        print("Dados Bloco 6:")
-        print(b6)
-    if res == 1:
-        print("Dados Bloco 5:")
+if(d == 2):
+    if(u == 1):
+        print("Bloco 5")
         print(b5)
-    if res == 2:
-        print("Dados Bloco 7:")
+    if(u == 2):
+        print("Bloco 7")
         print(b7)
+    if(u == 0):
+        print("Bloco 6")
+        print(b6)
+if(d == 1):
+    if(u == 1):
+        print("Bloco 1")
+        print(b1)
+    if(u == 2):
+        print("Bloco 3")
+        print(b3)
+    if(u == 0):
+        print("Bloco 2")
+        print(b2)
+a = input()
