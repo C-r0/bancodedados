@@ -15,26 +15,19 @@ res = int(input("Endereço: "))
 u = res // 1 % 10
 d = res // 10 % 10
 if(d == 0):
-    print("Bloco 4")
-    print(b4)
+    print("Bloco 4", b4)
 elif(d == 2):
     if(u == 1):
-        print("Bloco 5")
-        print(b5)
+        print("Bloco 5", b5)
     elif(u == 2):
-        print("Bloco 7")
-        print(b7)
+        print("Bloco 7", b7)
     elif(u == 0):
-        print("Bloco 6")
-        print(b6)
+        print("Bloco 6", b6)
 elif(d == 1):
     if(u == 1):
-        print("Bloco 1")
-        print(b1)
+        print("Bloco 1", b1)
     elif(u == 2):
-        print("Bloco 3")
-        print(b3)
+        print("Bloco 3", b3)
     elif(u == 0):
-        print("Bloco 2")
-        print(b2)
+        print("Bloco 2", b2)
 input()
